@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Panaon Website</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* styles.css */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #6a41a1;
+    padding: 15px 30px;
+}
+
+.logo img {
+    width: 50px;
+    height: 50px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.hero.about {
+    background: url('73160597_142324663845465_2310320259216703488_n.jpg') no-repeat center center/cover;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.hero.about::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    backdrop-filter: blur(8px);
+    background: rgba(0, 0, 0, 0.3);
+}
+
+.overlay {
+    position: relative;
+    text-align: center;
+    color: white;
+    max-width: 800px;
+    padding: 20px;
+}
+
+.overlay h1 {
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.overlay p {
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+.overlay a {
+    color: #f0e68c;
+    text-decoration: none;
+}
+
+footer {
+    background-color: #6a41a1;
+    text-align: center;
+    padding: 10px;
+    color: white;
+}
+@media (max-width: 768px) {
+            header {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            nav ul {
+                flex-direction: column;
+                padding: 10px 0;
+            }
+
+            nav ul li {
+                margin: 10px 0;
+            }
+
+            .hero {
+                height: 60vh;
+                text-align: center;
+            }
+
+            .overlay {
+                top: 10%;
+                left: 50%;
+                transform: translateX(-50%);
+                text-align: center;
+                font-size: 20px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .overlay {
+                font-size: 18px;
+                width: 90%;
+            }
+
+            nav ul li a {
+                font-size: 16px;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="download-removebg-preview.png" alt="Panaon Logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="attract.html">Attractions</a></li>
+                <li><a href="event.html">Events</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="hero about">
+        <div class="overlay">
+            <h1>ABOUT</h1>
+            <p>Panaon is a coastal municipality in the province of <a href="#">Misamis Occidental</a>.</p>
+            <p>The municipality has a land area of 46.80 square kilometers or 18.07 square miles which constitutes 2.33% of Misamis Occidental’s total area. Its population as determined by the 2020 Census was 10,797. This represented 1.75% of the total population of Misamis Occidental province, or 0.21% of the overall population of the <a href="#">Northern Mindanao</a> region. Based on these figures, the population density is computed at 231 inhabitants per square kilometer or 598 inhabitants per square mile.</p>
+        </div>
+    </section>
+    <footer>
+        <p>Copyright &copy; John Bryan C. Luzano BSIT2</p>
+    </footer>
+</body>
+</html>
